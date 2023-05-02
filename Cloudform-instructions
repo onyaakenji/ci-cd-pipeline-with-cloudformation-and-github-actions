@@ -1,0 +1,33 @@
+You are a DevOps Engineer working for a software development company called Hero
+Technologies. The company has a requirement to automate the deployment of a static website
+using AWS CloudFormation, Amazon S3 bucket, and GitHub Actions pipeline. The website
+consists of HTML, CSS, and JavaScript files.
+Your task is to create a CloudFormation template, set up an S3 bucket, and create a GitHub
+Actions pipeline that automatically deploys the website whenever changes are made to the
+codebase.
+
+Open Questions:
+	1. What is Github Actions and how does it integrate with CloudFormation to automate
+	resource provisioning on AWS?
+	2. What happens if there is an error in the CloudFormation template during the pipeline
+	execution?
+	3. What happens if the pipeline fails during deployment
+
+Answer: 
+STEP 1. 1-Create a github repository and clone it on vscode(ci-cd-pipeline-with-cloudformation-and-github-actions)
+        2- create a cloud formation template with resources like S3 that will be used for static website
+        -push your code to github to see if code was triggered
+        3-choose the language in which you want to write the template it
+        4- prepare a cloud formation template setting the different parameters for the s3 bucket
+        5-create an index.html file that we will use to host our static website, we will use an inline CSS file
+        6-code review
+        7-make sure there is a role add permissions to it and add user, aws fullaccess permission 
+         should be assigned to this user
+        8-connect your aws to your github by using aws adding secretes to your github
+      
+        9- create a folder .github and in it create a workflow folder and a yaml file inside contains 
+          your deployment script(a stage deploying your stacks and another deploying your s3 bucket)
+        10-Push to our github repository
+        11- Test your pipeline
+        12-Answer the open questions
+        13-Do a clean up
